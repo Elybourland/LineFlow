@@ -4,9 +4,8 @@ export enum NotificationType {
     Error = 3
 }
 
-
 export interface Notification {
     id: string,
-    type: string,
-    message: NotificationType
+    type: NotificationType,
+    message: string
 }
