@@ -1,6 +1,14 @@
 <mat-toolbar color="primary">
-    <span>
-        <fa-icon [icon]="faBars"></fa-icon>
-    </span>
-    <span>LineFlow</span>
+    <div class="nav-title">
+        <app-nav-menu class="margin-right-large "></app-nav-menu>
+        <span>LineFlow</span>
+    </div>
+    <div class="user-notification">
+        <span>
+            <fa-icon [icon]="faUserCog"></fa-icon>
+        </span>
+        <span>
+            <fa-icon [icon]="faBell"></fa-icon>
+        </span>
+    </div>
 </mat-toolbar>

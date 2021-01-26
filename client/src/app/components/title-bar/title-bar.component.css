@@ -1,3 +1,21 @@
 .mat-toolbar { 
     display: flex;
 }
+
+.nav-title { 
+    margin-right: auto;
+}
+
+.user-notification { 
+    margin-left: auto;
+}
+
+.user-notification span { 
+    margin-right: 10px;
+}
+
+/* Move to top-level style sheet */
+.margin-right-large { 
+    margin-right: 15px;
+}
+

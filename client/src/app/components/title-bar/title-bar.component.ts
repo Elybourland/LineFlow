@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faUserCog, faBell } from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-title-bar',
@@ -8,6 +8,8 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 })
 export class TitleBarComponent implements OnInit {
   faBars = faBars;
+  faUserCog = faUserCog;
+  faBell = faBell;
   constructor() { }
 
   ngOnInit(): void {

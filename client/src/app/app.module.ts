@@ -8,6 +8,7 @@ import { TitleBarComponent } from './components/title-bar/title-bar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { NavMenuComponent } from './components/title-bar/nav-menu/nav-menu.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
