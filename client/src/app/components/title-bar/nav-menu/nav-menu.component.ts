@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCogs, faTasks, faUsers, faUserTag } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-nav-menu',
@@ -8,6 +8,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavMenuComponent implements OnInit {
   faBars = faBars;
+  faUsers = faUsers;
+  faUserTag = faUserTag;
+  faTasks = faTasks;
+  faCogs = faCogs;
   constructor() { }
 
   ngOnInit(): void {
