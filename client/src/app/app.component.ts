@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { User } from './models/user.model';
+import { Role } from './models/role.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'line-flow';
+  /**
+   *
+   */
+  constructor() {
+    const users: User[] = [{
+      id: '1',
+      firstName: 'Ryan',
+      lastName: 'Gross',
+      roles: [{
+        id: '1',
+        name: 'Role 1',
+        description: 'Test role 1',
+      }] as Role[]
+    }]
+
+    users.forEach(user => console.log(user))
+  }
 }
