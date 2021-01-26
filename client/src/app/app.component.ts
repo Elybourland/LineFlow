@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { User } from './models/user.model';
 import { Role } from './models/role.model';
+// import { Notification } from '.models/notification.model';
+// import { Equipment } from '.models/equipment.model';
+// import { Job } from '.models/job.model';
 
 @Component({
   selector: 'app-root',
