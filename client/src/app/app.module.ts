@@ -10,12 +10,16 @@ import { NavMenuComponent } from './components/title-bar/nav-menu/nav-menu.compo
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
+import { MatDividerModule } from '@angular/material/divider';
+import { OverviewComponent } from './components/overview/overview.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleBarComponent,
-    NavMenuComponent
+    NavMenuComponent,
+    OverviewComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     FontAwesomeModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
