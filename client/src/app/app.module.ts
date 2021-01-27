@@ -13,13 +13,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { OverviewComponent } from './components/overview/overview.component';
 import { MatCardModule } from '@angular/material/card';
+import { SummaryCardComponent } from './components/overview/summary-card/summary-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleBarComponent,
     NavMenuComponent,
-    OverviewComponent
+    OverviewComponent,
+    SummaryCardComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,5 @@
-<p>overview works!</p>
+<div class="card-container">
+<div *ngFor="let summary of summaries" > 
+    <app-summary-card [summary]="summary"></app-summary-card>
+</div>
+</div>
