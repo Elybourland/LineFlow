@@ -13,13 +13,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { OverviewComponent } from './components/overview/overview.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatTableModule } from '@angular/material/table';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TitleBarComponent,
     NavMenuComponent,
-    OverviewComponent
+    OverviewComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,8 @@ import { MatCardModule } from '@angular/material/card';
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
