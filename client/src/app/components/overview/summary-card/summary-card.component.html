@@ -1,8 +1,15 @@
 <mat-card>
+    <mat-card-header>
     <mat-card-title>
         {{ summary.title }}
     </mat-card-title>
+    </mat-card-header>
     <mat-card-content>
         {{ summary.body }}
     </mat-card-content>
+    <mat-card-actions *ngIf="summary.actions">
+        <span *ngFor='let action of summary.actions'>
+        <a [routerLink]="action.route">{{ action.name }}</a>
+    </span>
+    </mat-card-actions>
 </mat-card>

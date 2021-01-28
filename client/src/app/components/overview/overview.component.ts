@@ -12,7 +12,7 @@ export class OverviewComponent implements OnInit {
 
   constructor() {
     this.summaries = [
-      { id: 1, icon: 'faUser', title: 'Users', body: 'Test'},
+      { id: 1, icon: 'faUser', title: 'Users', body: 'Test', actions: [{ id: 1, name: 'Manage Users', route: '/users' }]},
       { id: 1, icon: 'faUser', title: 'Roles', body: 'Test'},
       { id: 1, icon: 'faUser', title: 'Jobs', body: 'Test'},
       { id: 1, icon: 'faUser', title: 'Equipment', body: 'Test'},
