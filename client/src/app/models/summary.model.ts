@@ -1,5 +1,6 @@
 export interface Summary { 
     id: number;
     icon: string;
-    name: string;
+    title: string;
+    body: string;
 }
