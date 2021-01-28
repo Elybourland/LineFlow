@@ -4,21 +4,21 @@
 <mat-menu #menu="matMenu">
     <button mat-menu-item>
         <mat-icon><fa-icon [icon]="faUsers"></fa-icon></mat-icon>
-        <span>Users</span>
+        <span><a [routerLink]="'/users'">Users</a></span>
     </button>
     <mat-divider></mat-divider>
     <button mat-menu-item>
         <mat-icon><fa-icon [icon]="faUserTag"></fa-icon></mat-icon>
-        <span>Roles</span>
+        <span><a [routerLink]="'/roles'">Roles</a></span>
     </button>
     <mat-divider></mat-divider>
     <button mat-menu-item>
         <mat-icon><fa-icon [icon]="faTasks"></fa-icon></mat-icon>
-        <span>Jobs</span>
+        <span><a [routerLink]="'/jobs'">Jobs</a></span>
     </button>
     <mat-divider></mat-divider>
     <button mat-menu-item>
         <mat-icon><fa-icon [icon]="faCogs"></fa-icon></mat-icon>
-        <span>Equipment</span>
+        <span><a [routerLink]="'/equipment'">Equipment</a></span>
     </button>
 </mat-menu>
