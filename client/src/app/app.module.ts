@@ -14,6 +14,9 @@ import { MatDividerModule } from '@angular/material/divider';
 import { OverviewComponent } from './components/overview/overview.component';
 import { MatCardModule } from '@angular/material/card';
 import { SummaryCardComponent } from './components/overview/summary-card/summary-card.component';
+import { MatTableModule } from '@angular/material/table';
+import { UsersComponent } from './components/users/users.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,8 @@ import { SummaryCardComponent } from './components/overview/summary-card/summary
     TitleBarComponent,
     NavMenuComponent,
     OverviewComponent,
-    SummaryCardComponent
+    SummaryCardComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,9 @@ import { SummaryCardComponent } from './components/overview/summary-card/summary
     MatMenuModule,
     MatIconModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
