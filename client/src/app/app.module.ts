@@ -15,6 +15,7 @@ import { OverviewComponent } from './components/overview/overview.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { UsersComponent } from './components/users/users.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { UsersComponent } from './components/users/users.component';
     MatIconModule,
     MatDividerModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
