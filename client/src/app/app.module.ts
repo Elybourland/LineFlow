@@ -17,6 +17,7 @@ import { SummaryCardComponent } from './components/overview/summary-card/summary
 import { MatTableModule } from '@angular/material/table';
 import { UsersComponent } from './components/users/users.component';
 import { MatButtonModule } from '@angular/material/button';
+import { DepartmentsComponent } from './components/departments/departments.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MatButtonModule } from '@angular/material/button';
     NavMenuComponent,
     OverviewComponent,
     SummaryCardComponent,
-    UsersComponent
+    UsersComponent,
+    DepartmentsComponent
   ],
   imports: [
     BrowserModule,
