@@ -13,6 +13,7 @@ export class UsersComponent implements OnInit {
   faTrashAlt = faTrashAlt;
   users : User[];
   displayedColumns = ['id', 'firstName', 'lastName', 'editUser', 'deleteUser'];
+  @ViewChild(MatSort) sort: MatSort;
   constructor() { 
     this.users = [{
       id: '1',
@@ -58,6 +59,7 @@ export class UsersComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.users.sort = this.sort;
   }
 
 }
