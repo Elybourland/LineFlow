@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { User } from 'src/app/models/user.model';
-import {MatSort} from '@angular/material/sort';
+import { Sort } from '@angular/material/sort';
 import { faPencilAlt, faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -13,7 +13,9 @@ export class UsersComponent implements OnInit {
   faTrashAlt = faTrashAlt;
   users : User[];
   displayedColumns = ['id', 'firstName', 'lastName', 'editUser', 'deleteUser'];
-  @ViewChild(MatSort) sort: MatSort;
+
+  sortedData;
+
   constructor() { 
     this.users = [{
       id: '1',
@@ -56,10 +58,36 @@ export class UsersComponent implements OnInit {
       }]
     } as User];
 
+    this.sortedData = this.users.slice();
+
    }
 
+   sortData(sort: Sort) {
+    const data = this.users.slice();
+    if (!sort.active || sort.direction == '') {
+      this.sortedData = data;
+      return;
+    }
+
+    this.sortedData = data.sort((a, b) => {
+      let isAsc = sort.direction == 'asc';
+      switch (sort.active) {
+        case 'id': return compare(a.id, b.id, isAsc);
+        case 'firstName': return compare(+a.firstName, +b.firstName, isAsc);
+        case 'lastName': return compare(+a.lastName, +b.lastName, isAsc);
+        default: return 0;
+      }
+    });
+
+  }
+
+  function compare(a, b, isAsc) {
+    return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
+  };
+
+  
+
   ngOnInit(): void {
-    this.users.sort = this.sort;
   }
 
 }
