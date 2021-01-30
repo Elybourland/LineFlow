@@ -6,7 +6,7 @@ export interface Department {
     id: number;
     name: string;
     description: string;
-    users: User[];
-    equipment: Equipment[];
-    jobs: Job[];
+    users?: User[];
+    equipment?: Equipment[];
+    jobs?: Job[];
 }
