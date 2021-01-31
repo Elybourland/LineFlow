@@ -4,7 +4,7 @@
     <button mat-raised-button color="primary">Add User</button>
   </div>
 
-  <table mat-table [dataSource]="users" matSort class="mat-elevation-z8">
+  <table mat-table [dataSource]="sortedData" matSort (matSortChange)="sortData($event)" class="mat-elevation-z8">
   
     <ng-container matColumnDef="id">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>

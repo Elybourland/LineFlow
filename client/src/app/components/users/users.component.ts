@@ -72,18 +72,18 @@ export class UsersComponent implements OnInit {
     this.sortedData = data.sort((a, b) => {
       let isAsc = sort.direction == 'asc';
       switch (sort.active) {
-        case 'id': return compare(a.id, b.id, isAsc);
-        case 'firstName': return compare(+a.firstName, +b.firstName, isAsc);
-        case 'lastName': return compare(+a.lastName, +b.lastName, isAsc);
+        case 'id': return this.compare(a.id, b.id, isAsc);
+        case 'firstName': return this.compare(a.firstName, b.firstName, isAsc);
+        case 'lastName': return this.compare(a.lastName, b.lastName, isAsc);
         default: return 0;
       }
     });
 
   }
 
-  function compare(a, b, isAsc) {
+ compare(a: string, b: string, isAsc: any) {
     return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
-  };
+  }
 
   
 
