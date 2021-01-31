@@ -17,6 +17,7 @@ import { SummaryCardComponent } from './components/overview/summary-card/summary
 import { MatTableModule } from '@angular/material/table';
 import { UsersComponent } from './components/users/users.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSortModule } from '@angular/material/sort';
 import { DepartmentsComponent } from './components/departments/departments.component';
 
 @NgModule({
@@ -40,7 +41,8 @@ import { DepartmentsComponent } from './components/departments/departments.compo
     MatDividerModule,
     MatCardModule,
     MatTableModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
