@@ -18,6 +18,7 @@ import { MatTableModule } from '@angular/material/table';
 import { UsersComponent } from './components/users/users.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
+import { DepartmentsComponent } from './components/departments/departments.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatSortModule } from '@angular/material/sort';
     NavMenuComponent,
     OverviewComponent,
     SummaryCardComponent,
-    UsersComponent
+    UsersComponent,
+    DepartmentsComponent
   ],
   imports: [
     BrowserModule,
