@@ -12,7 +12,7 @@ export class UsersComponent implements OnInit {
   faPencilAlt = faPencilAlt;
   faTrashAlt = faTrashAlt;
   users : User[];
-  displayedColumns = ['id', 'firstName', 'lastName', 'editUser', 'deleteUser'];
+  displayedColumns = ['id', 'firstName', 'lastName', 'editUser'];
 
   sortedData;
 
