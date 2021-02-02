@@ -1,7 +1,30 @@
 <div>
   
   <div class="user-button">
-    <button mat-raised-button color="primary">Add User</button>
+    <button (click)="showUserForm = !showUserForm" mat-raised-button color="primary">Add User</button>
+  </div>
+  <div class="user-form" *ngIf="showUserForm">
+    <h2>Add User</h2>
+
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Legacy form field</mat-label>
+          <input matInput placeholder="First Name">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>Legacy form field</mat-label>
+          <input matInput placeholder="Last Name">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+      </p>
+
+      <button mat-raised-button color="primary">Add New User</button>
+
   </div>
 
   <table mat-table [dataSource]="sortedData" matSort (matSortChange)="sortData($event)" class="mat-elevation-z8">
