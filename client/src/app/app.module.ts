@@ -19,6 +19,7 @@ import { UsersComponent } from './components/users/users.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSortModule } from '@angular/material/sort';
 import { DepartmentsComponent } from './components/departments/departments.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { DepartmentsComponent } from './components/departments/departments.compo
     MatCardModule,
     MatTableModule,
     MatButtonModule,
-    MatSortModule
+    MatSortModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

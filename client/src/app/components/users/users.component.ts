@@ -13,6 +13,7 @@ export class UsersComponent implements OnInit {
   faTrashAlt = faTrashAlt;
   users : User[];
   displayedColumns = ['id', 'firstName', 'lastName', 'editUser', 'deleteUser'];
+  showUserForm: boolean = false;
 
   sortedData;
 
